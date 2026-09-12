@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Smart E-Wallet</string>
+    
+    <!-- Auth Screens -->
+    <string name="login_title">Đăng Nhập</string>
+    <string name="register_title">Đăng Ký</string>
+    <string name="email_hint">Email</string>
+    <string name="password_hint">Mật khẩu</string>
+    <string name="confirm_password_hint">Xác nhận mật khẩu</string>
+    <string name="first_name_hint">Họ</string>
+    <string name="last_name_hint">Tên</string>
+    <string name="phone_hint">Số điện thoại</string>
+    <string name="login_button">Đăng Nhập</string>
+    <string name="register_button">Đăng Ký</string>
+    <string name="forgot_password">Quên mật khẩu?</string>
+    <string name="dont_have_account">Chưa có tài khoản? <b>Đăng ký</b></string>
+    <string name="already_have_account">Đã có tài khoản? <b>Đăng nhập</b></string>
+    
+    <!-- OTP Screens -->
+    <string name="otp_setup_title">Thiết Lập OTP</string>
+    <string name="otp_verify_title">Xác Thực OTP</string>
+    <string name="scan_qr_code">Quét mã QR</string>
+    <string name="enter_otp_code">Nhập mã OTP</string>
+    <string name="otp_code_hint">Mã OTP (6 chữ số)</string>
+    <string name="verify_button">Xác Thực</string>
+    <string name="backup_codes">Mã dự phòng</string>
+    
+    <!-- Dashboard -->
+    <string name="balance">Số dư</string>
+    <string name="transfer">Chuyển tiền</string>
+    <string name="topup">Nạp tiền</string>
+    <string name="transaction_history">Lịch sử giao dịch</string>
+    <string name="profile">Hồ sơ</string>
+    <string name="settings">Cài đặt</string>
+    <string name="logout">Đăng xuất</string>
+    
+    <!-- Transfer -->
+    <string name="recipient_email">Email người nhận</string>
+    <string name="amount">Số tiền</string>
+    <string name="description">Mô tả</string>
+    <string name="pin_hint">Mã PIN</string>
+    <string name="transfer_button">Chuyển tiền</string>
+    
+    <!-- Topup -->
+    <string name="topup_amount">Số tiền nạp</string>
+    <string name="select_payment_method">Chọn phương thức thanh toán</string>
+    <string name="vnpay">VNPay</string>
+    <string name="topup_button">Nạp tiền</string>
+    
+    <!-- Error Messages -->
+    <string name="error_invalid_email">Email không hợp lệ</string>
+    <string name="error_invalid_password">Mật khẩu không hợp lệ</string>
+    <string name="error_password_mismatch">Mật khẩu không trùng khớp</string>
+    <string name="error_network">Lỗi kết nối mạng</string>
+    <string name="error_server">Lỗi máy chủ</string>
+    <string name="error_invalid_otp">Mã OTP không hợp lệ</string>
+    <string name="error_insufficient_balance">Số dư không đủ</string>
+    
+    <!-- Success Messages -->
+    <string name="success_register">Đăng ký thành công</string>
+    <string name="success_login">Đăng nhập thành công</string>
+    <string name="success_otp_setup">Thiết lập OTP thành công</string>
+    <string name="success_transfer">Chuyển tiền thành công</string>
+    <string name="success_topup">Nạp tiền thành công</string>
+    
+</resources>
