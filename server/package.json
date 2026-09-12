@@ -1,0 +1,28 @@
+{
+  "name": "smart-ewallet-server",
+  "version": "1.0.0",
+  "description": "Smart E-Wallet Backend Server",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "keywords": ["ewallet", "payment", "otp", "totp", "vnpay"],
+  "author": "Dat Tran",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "firebase-admin": "^11.11.0",
+    "bcrypt": "^5.1.0",
+    "jsonwebtoken": "^9.0.0",
+    "dotenv": "^16.0.3",
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "qrcode": "^1.5.3",
+    "crypto": "^1.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
