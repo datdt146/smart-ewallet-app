@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/otp_setup_title"
+            android:textSize="28sp"
+            android:textColor="@color/primary_blue"
+            android:textStyle="bold"
+            android:layout_marginBottom="24dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quét mã QR dưới đây bằng ứng dụng Authenticator"
+            android:textSize="14sp"
+            android:layout_marginBottom="16dp" />
+
+        <ImageView
+            android:id="@+id/qrCodeImageView"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="24dp"
+            android:contentDescription="QR Code" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hoặc nhập mã bí mật:"
+            android:textSize="14sp"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/secretKeyText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="12sp"
+            android:textColor="@color/primary_blue"
+            android:layout_marginBottom="24dp"
+            android:padding="12dp"
+            android:background="@drawable/bg_edit_text" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mã dự phòng:"
+            android:textSize="14sp"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/backupCodesText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="12sp"
+            android:layout_marginBottom="24dp"
+            android:padding="12dp"
+            android:background="@drawable/bg_edit_text" />
+
+        <EditText
+            android:id="@+id/otpCodeEditText"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="@string/otp_code_hint"
+            android:inputType="number"
+            android:maxLength="6"
+            android:background="@drawable/bg_edit_text"
+            android:paddingHorizontal="16dp"
+            android:layout_marginBottom="24dp" />
+
+        <Button
+            android:id="@+id/verifyButton"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="@string/verify_button"
+            android:backgroundTint="@color/primary_blue"
+            android:textColor="@android:color/white" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+</ScrollView>

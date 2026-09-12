@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="24dp">
+
+        <Button
+            android:id="@+id/refreshButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Làm mới" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/logoutButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Đăng xuất" />
+    </LinearLayout>
+
+    <CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:elevation="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/balance"
+                android:textSize="14sp"
+                android:textColor="@color/primary_gray"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/balanceText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0.00 VND"
+                android:textSize="32sp"
+                android:textColor="@color/primary_blue"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </CardView>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:rowCount="2"
+        android:layout_marginBottom="24dp">
+
+        <Button
+            android:id="@+id/transferButton"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:text="@string/transfer"
+            android:backgroundTint="@color/primary_blue" />
+
+        <Button
+            android:id="@+id/topupButton"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:text="@string/topup"
+            android:backgroundTint="@color/primary_blue" />
+
+        <Button
+            android:id="@+id/historyButton"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:text="@string/transaction_history"
+            android:backgroundTint="@color/primary_blue" />
+
+        <Button
+            android:id="@+id/profileButton"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:text="@string/profile"
+            android:backgroundTint="@color/primary_blue" />
+    </GridLayout>
+
+    <Button
+        android:id="@+id/settingsButton"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="@string/settings"
+        android:backgroundTint="@color/primary_gray" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="24dp"
+        android:visibility="gone" />
+
+</LinearLayout>
